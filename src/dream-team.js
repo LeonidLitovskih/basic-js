@@ -15,7 +15,9 @@ const { NotImplementedError } = require('../extensions/index.js');
  */
 function createDreamTeam(members) {
   if ( !Array.isArray(members) || members.length === 0 ) return false;
-  return (members.filter(e => typeof (e) === "string").map(e => e.trim().substring(0,1).toUpperCase()).sort().join('') );
+
+  return (members.filter(a => typeof (a) === "string").map(a => a.trim().substring(0,1).toUpperCase()).sort().join('') );
+
   // remove line with error and write your code here
 }
 
